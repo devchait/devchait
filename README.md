@@ -10,18 +10,18 @@ You can click the Preview link to take a look at your changes.
 --->
 
 Projects:
-1. Rapid NN Model Deployer Framework:
-  - What this framework comprise of.
-  - How much time was reduce.
-  - This also acted as part of POC and for Client demo
-  - Capabilities includes Openvino, Pytorch, Opencv, tensorrt.
+1. Multi-faceted Framework for Benchmarking Deep Learning Inference Solution:
+  - What this framework comprise of :
+  - Famework as deployable Video Analytic solution could server 25-30 real-time rtsp-stream with 30 fps as analytical stream-out solution
+  - This framework reduce model deployment time by 95%
+  - Reduce 85% development time for adding new business rules through custom plugins
+  - ONVIF protocol support for analytical meta-data sharing
+  - Multi-platform inferencing solution supports OpenCV, OpenVino, pytorch and tensorrt allowing benchmarking among each other in real-time scenarios.
+  - Could scale simultaneously on GPU and CPU
   - Support for Windows and Ubuntu
-  - Easy to add custom rules
-  - Pipeline based
-  - RabbitMQ, asynchronous python
-  - Design patterns
-  - Layers
-  - Ease of Deployment and Testing the models
+  - Responsibility: In inception phase of AI research I architected and developed the entire framework from scratch. To deploy the solution on client machine. Benchmark the performance of business rules across various frameworks. Maintained the github repository for the solution.
+  - Desing Patterns: Entire framework incorporated multiple design patterns like Facade, Bridge, Adapter, Proxy, Singleton, Oberver and Visitor.
+  - libraries: RabbitMQ, pytorch, tensorrt, python bindings, Opencv, OpenVino, Shapely, pytest
   - Time taken: 2020 Feb - 2020 July
 2. Vicon AI:
   - Server Solution
