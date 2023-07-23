@@ -58,34 +58,32 @@ Projects:
 5. Models Deployed:
     - For Vicon AI Solution as part of the Analytics API deployed multiple engines. Few of those are Yolov3, Yolov5, Traffic Light Classification, Gender Classification and Anamoly Detection. Implemented unified API for accessing the underlying strategies of respective use-case.
 6. Hands On :
-    - Pytorch Modeling
-    - Pytorch custom DataLoader
-    - Pytorch classification Model Trainning and Deployment
-    - Re-enforcement Learning
-    - Openvino SSD Deployment
-    - Pytorch models to tensorrt
-    - ONNX model to tensorrt
-    - Openvino to serializeed engine
-    - Tensorrt Network and engine conversion
+    - Pytorch Modelling: Research and implemented various models 
+    - Customized the Datalaoader for custom data-set input.
+    - Pytorch classification Model Trainning and Deployment. Experienced in writing and training pytorch model. Loss functions used.
+    - ONNX model to tensorrt: Converted ONNX model to Tensorrt engine files. 
+    - Openvino to serialized engine
+    - Experienced in serializing pytorch's weight file to tensorrt engines. This includes writing network definition in Tensorrt and writing custom tensorrt functions representing the equivalent operations of pytorch network layers.
 7. DataLablePro:
-    - MakeSense Fork Date
-    - Ideation
+    - DataLablePro is an ecosystem which provides role-base interface to solve multiple operations of AI/ML pipeline from Data Collection to Benchmarking the Business Events. This ecosystem comprise of DVC and github along with set of custom ML libraries and presistent database for auditing. Based on hybrid micro-service architecture the entire interface is web-based with python as backend fueling the ML operations. It supports multiple roles like Annotator, Reviewer, ML Engineer, QA Engineer, Project Manager. It supports YOLO, coco, json and various other Annotation formats.
+    - Role: Product Manager and Solution Architect.
+    - Responsibility: Ideating the new features on the basis of generic usage and in-house requirement. Designed every feature and its interactions. Lead the team members to implement the features. Designed and code the backend ML library. Implemented browser base persistent state for intial Make-Sense Fork to be known as DatalablePro. Github repository maintainer. Code Review and Feature release.
+    - Contribution/ Key Insights: Structured the solution as multi-faceted architecture to accomodate independent implementation of loose scripts focusing on particular aspect of a problem in ML pipeline to finally act as single Product. This is a by-product of Vicon AI Server Solution.
     - ML Operations
     - Data set Labelling to Model Benchmarking
     - Ecosystem
     - Roles
-    - Layers
-    - Designs
+    - Layers:
     - Optimization
-    - Key Features
-    - Github, DVC, python bindings, PostgressSQL, Micro-Services, ReactJS and Node
-    - Team
+    - Key Features: Queue base Annotation Task Assigment, Image and Video Annotation Review and feedback, Annotation format converter, Model Accuracy Validation, AI Model and Dataset version association, Project progress tracking and contribution insights
+    - Github, DVC, python bindings, PostgressSQL, Micro-Services, ReactJS and Node, MOT benchmarking, COCO, plugins
+    - Team: Lead the 10 member team.
     - My responsibility
     - Contribution
     - AI/ML Role
     - Benchmarking and Verification
-8. Apache Beam Inferencing
-9. NLP Model Inferencing
+9. Apache Beam Inferencing
+10. NLP Model Inferencing
 
    
   
