@@ -39,33 +39,24 @@ Projects:
           - Non feature Association Algorithm took 1-6 milli-seconds for 7-40 people on intel i-7 utilizing 10-20 % CPU. It has nxmx (log n) complexity. Re-associate id in case of object occlusion for particular time. 
           - Accuracy: 
           - Based on the idea of Nearest Neighbour with maximal possible object proximity for adjustable fps this algorithm draws direct association without need of prediction thus providing less run-time complexity as compare to state-of-the-art Kalman tracker
-        - Association Algorithm NN:
+        - Association Algorithm CUDA:
           - Latency: 1 milli-seconds irrespective of number of objects in frame.
           - Accuracy : 
-          - Extended proximity with multiple 
-          - Capability
-          - Talk on Data Structures and Algorithm Complexity
+          - Extended Object proximity possibility with maximum overlap 
+          - Custom CUDA kernel for solving the Association problem with 5 dimensional feature matching. Matching is solved in n x m time with m concurrent cuda threads.
  3. Optimizations:
-    - Yolo Pre-processing on CUDA Latency, Accuracy
-    - NMS on CUDA Latency, Accuracy
-    - Custom Yolo Plugin
-    - Normalization Plugin
-    - Tracking on CUDA
-    - Color Recognition on CUDA
+    - Implemented faster custom CUDA kernel for YOLO Pre-processing including batch support and normalization. This reduce the latency of end-to-end pipeline by 17%. ~ 2 milli-second reduction in end-to-end flow tested on GTX 1060 and deployed on multiple Production system comprising of RTX 3070 and A4000 type cards.
+    - Modified YOLO cuda kernel to include distance and location information of an object. This information was collected as part of new output data-structure without changing the YOLO architecture. This improved tracking performance by 30% and reduce the latency by 15%
+    - Implemented custom NMS plugin layer in tensorrt. This layer involve cuda kernel to solve NMS with same dimension for input and output. It uses win loss strategy and mark the looser value.
+    - Expose the API functions for python binding and separte bindings for CUDA kernels. 
+
  4. Scalability:
     - GStreamer : 
     - DeepStream
     - Triton
     - Asynchronous strategy
 5. Models Deployed:
-    - Yolov3, v5
-    - IBNNet16
-    - Asset Protection Use case
-    - Gender Classification Use case
-    - Traffic Light Classification
-    - Traffic Light ML Model Cuda Kernel
-    - Forensic Search
-    - Color Recognition
+    - For Vicon AI Solution as part of the Analytics API deployed multiple engines. Few of those are Yolov3, Yolov5, Traffic Light Classification, Gender Classification and Anamoly Detection. Implemented unified API for accessing the underlying strategies of respective use-case.
 6. Hands On :
     - Pytorch Modeling
     - Pytorch custom DataLoader
@@ -95,7 +86,7 @@ Projects:
     - Benchmarking and Verification
 8. Apache Beam Inferencing
 9. NLP Model Inferencing
-10. Apache Beam and R Statistics Predective Analytics, Sesonal, Recurrent, MSE Models
+
    
   
       
