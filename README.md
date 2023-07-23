@@ -25,33 +25,24 @@ Projects:
   - Time taken: 2020 Feb - 2020 July
 2. Vicon AI:
   - Server Solution
-      - My role
-      - Unified API
-      - Layer Arhitecture
-      - Platform: C++ 11 and 14, Tensorrt, CUDA, Windows, Ubuntu, UnitTest, CMake, Openvino
-      - My Role and Responsibility: Engine Deployment and Unified API, CUDA Optimizations, Pipeline Paradigm
-      - Asynchronous Strategy and Multi-threading
-      - Tensorrt Plugins Development
-      - Talk here on Desgin Patterns and Development work and utilization of this in production
-  - Tracking Framework
-        - Time taken to complete
-        - Design Pattern
-        - Capability
-        - Overall Framework basis
-        - Asynchronous behavior
-        - Synchronous behavior
+      - Architected Mass Video Analytic Server Solution for VMS system addressing 150-300 rtsp streams with 20-30 fps on intel xeon with 4 Tesla T4 cards
+      - Vicon AI could read multiple realtime rtsp stream and communicates the analytical stream along with meta-data to multiple VMS nodes
+      - Responsibility: Designed and developed entire layer solution structure with analytical API as base to Business rules as tail into stream-in and stream-out architecture. Implemented analytical library abstracting the complexity of analytics with simple API to be use in pipeline analytic stage. Analytical library involves deployment of tensorrt engines along with various strategies of inferencing to balance the input request among multiple operational resource to scale with maximum channels. Runs on both GPU and CPU. Wrote Heirarchical CMake struture from scratch
+      - Lead the team of 5-6 developers. Maintaining the github repository and implemented CI solution
+      - Platform: C++ 11 and 14, Tensorrt, CUDA, Windows, Ubuntu, UnitTest, CMake 3.2, Openvino
+      - Design Patterns: Followed SOLID design pattern with pipeline paradigm
+      - Time taken: 2020 August - 2022 December
+  -  Real-time Tracking Framework
+        - A Templated framework in Vicon AI Server solution addressing the problem of real-time light-weight multi-object tracking for mass streams. Runs on both CPU and GPU with featured and non-featured flavours. Reduce the complexity from nxnxn to nxm(logn). 1 milli-scond latency for 6-7 people to 5-7 milli-seconds for 40-50 people. Encapsulates object id, trace-path, direction of each object as a Frame State meta-information with Controlable object off-screen timining and id reutilization option. 
+        - Responsibility: Designed and implemented the Tracking framework with few Association Algorithms with plugin mechanism allowing easy to deploy new Association algorithms directly in Vicon AI solution.
         - Association Algorithm CPU:
-          - Latency
-          - Accuracy
-          - Strategies
-          - Some insights of Algorithm and its ranking across other algorithm. Its utility in production
-          - Capability
-          - Talk on Data Structures and Algorithm Complexity
+          - Non feature Association Algorithm took 1-6 milli-seconds for 7-40 people on intel i-7 utilizing 10-20 % CPU. It has nxmx (log n) complexity. Re-associate id in case of object occlusion for particular time. 
+          - Accuracy: 
+          - Based on the idea of Nearest Neighbour with maximal possible object proximity for adjustable fps this algorithm draws direct association without need of prediction thus providing less run-time complexity as compare to state-of-the-art Kalman tracker
         - Association Algorithm NN:
-          - Latency
-          - Accuracy
-          - Strategies
-          - Some insights of Algorithm and its ranking across other algorithm. Its utility in production
+          - Latency: 1 milli-seconds irrespective of number of objects in frame.
+          - Accuracy : 
+          - Extended proximity with multiple 
           - Capability
           - Talk on Data Structures and Algorithm Complexity
  3. Optimizations:
