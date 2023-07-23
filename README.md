@@ -51,10 +51,10 @@ Projects:
     - Expose the API functions for python binding and separte bindings for CUDA kernels. 
 
  4. Scalability:
-    - GStreamer : 
-    - DeepStream
-    - Triton
-    - Asynchronous strategy
+    - GStreamer : GSteamer nvinfer video encoding and decoding with GStreamer as base API for Vicon Server Solution for large scale inference server 
+    - DeepStream: Linux base solutions for Vicon AI Server
+    - Triton:
+    - Asynchronous strategy: Increase the throughput by 65%.
 5. Models Deployed:
     - For Vicon AI Solution as part of the Analytics API deployed multiple engines. Few of those are Yolov3, Yolov5, Traffic Light Classification, Gender Classification and Anamoly Detection. Implemented unified API for accessing the underlying strategies of respective use-case.
 6. Hands On :
