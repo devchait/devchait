@@ -10,6 +10,15 @@ You can click the Preview link to take a look at your changes.
 --->
 
 Projects:
+Roles and Responsibility: 
+i. To research and architect the solution and decide over the frameworks to use
+ii. Draw low-level plans and class structure to assign the task to software engineers and senior software engineers
+iii. Mentor and train new Developers on the technology and assist in implementing the modules
+iv. Co-ordinate the solution across multiple team and decide over the optimal strategical plan of implementation
+v. Maintain the github repository, Eastablish github and code of conduct practices
+vi. Setting up custom CI/CD for machine learning and product development with github client, github and DVC for multiple products
+vii. Research and install the most suitable tools and ecosystem for faster and better development with minimal or low cost
+viii. Research project management using Github Project boards as per the customer story and targeted as multiple sprints as part of scrum meeting
 1. Multi-faceted Framework for Benchmarking Deep Learning Inference Solution:
   - What this framework comprise of :
   - Famework as deployable Video Analytic solution could server 25-30 real-time rtsp-stream with 30 fps as analytical stream-out solution
