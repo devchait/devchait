@@ -17,66 +17,85 @@ Resume details:
 [Your Email Address]
 [Your Phone Number]
 
+[Your Name]
+[Your Address]
+[Your City, State, Zip Code]
+[Your Email Address]
+[Your Phone Number]
+
 Objective:
-Dedicated and results-driven AI Solution Architect with a strong research background and a proven track record of designing and implementing innovative AI solutions. Skilled in architecting and optimizing deep learning inference frameworks, coordinating and leading cross-functional teams, and establishing efficient CI/CD pipelines. Seeking to contribute expertise in AI research and solution architecture to a dynamic organization.
+Dedicated and highly skilled AI/ML Engineer with a strong background in designing and implementing cutting-edge solutions for deep learning inference. I have a proven track record of successfully architecting and developing frameworks for real-time video analytics, tracking, and server solutions. My expertise in leveraging multiple libraries and platforms, such as TensorRT, PyTorch, OpenVINO, and GStreamer, allows me to create scalable and efficient AI solutions. I am seeking challenging opportunities to contribute my skills and drive innovation in the field of AI/ML.
 
-Professional Experience:
+Projects:
 
-AI Solution Architect | XYZ Tech Solutions | [Dates]
+Multi-faceted Framework for Benchmarking Deep Learning Inference Solution
 
-Roles and Responsibilities:
+Deployable Video Analytic solution serving 25-30 real-time rtsp-streams with 30 fps as analytical stream-out solution.
+95% reduction in model deployment time and 85% reduction in development time for adding new business rules through custom plugins.
+ONVIF protocol support for analytical meta-data sharing.
+Multi-platform inferencing solution supporting OpenCV, OpenVino, PyTorch, and TensorRT for real-time benchmarking.
+Scalable on both GPU and CPU, supporting Windows and Ubuntu.
+Responsibilities: Architected and developed the entire framework from scratch, deployed the solution on client machines, benchmarked the performance of business rules across various frameworks, and maintained the GitHub repository for the solution.
+Design Patterns: Incorporated multiple design patterns like Facade, Bridge, Adapter, Proxy, Singleton, Observer, and Visitor.
+Libraries: RabbitMQ, PyTorch, TensorRT, Python bindings, OpenCV, OpenVino, Shapely, pytest.
+Time Taken: February 2020 - July 2020.
+Vicon AI: Mass Video Analytic Server Solution
 
-Conducted extensive research to architect cutting-edge AI solutions, strategically selecting frameworks and technologies to achieve optimal performance and scalability.
-Developed detailed low-level plans and class structures, delegating tasks to software engineers and senior software engineers, ensuring smooth implementation and timely project completion.
-Mentored and trained new developers on the latest technologies, facilitating their growth and assisting in the successful integration of AI modules.
-Coordinated solution development across multiple teams, employing an optimal strategic plan for implementation while maintaining open lines of communication.
-Led the establishment of GitHub repositories and implemented code of conduct practices to ensure effective version control and collaboration within the development team.
-Implemented custom CI/CD pipelines for machine learning and product development using GitHub client, GitHub Actions, and Data Version Control (DVC) for multiple products, ensuring continuous integration and delivery.
-Conducted thorough research to identify the most suitable tools and ecosystems for AI development, focusing on cost-effectiveness and faster delivery of high-quality solutions.
-Utilized GitHub Project boards and Scrum meetings to manage project progress efficiently, aligning with customer stories and targeting multiple sprints for enhanced project management.
-Key Accomplishments:
+Architected a server solution addressing 150-300 rtsp streams with 20-30 fps on Intel Xeon with 4 Tesla T4 cards.
+Enabled real-time communication of analytical stream and meta-data to multiple VMS nodes.
+Developed analytical library abstracting the complexity of analytics with a simple API for pipeline analytic stages.
+Implemented both CPU and GPU-based inferencing strategies to achieve low latency and high throughput.
+Led a team of 5-6 developers, maintained the GitHub repository, and implemented CI solutions.
+Platform: C++ 11 and 14, TensorRT, CUDA, Windows, Ubuntu, UnitTest, CMake 3.2, OpenVino.
+Design Patterns: Followed SOLID design patterns with a pipeline paradigm.
+Time Taken: August 2020 - December 2022.
+Real-time Tracking Framework
 
-Multi-faceted Framework for Benchmarking Deep Learning Inference Solution:
+Templated framework in Vicon AI Server solution for real-time light-weight multi-object tracking for mass streams.
+Achieved low latency and encapsulated object information as Frame State meta-information.
+Designed and implemented tracking framework with plugin mechanism for easy deployment of new Association algorithms.
+Implemented both CPU and CUDA-based Association Algorithms with significant performance gains.
+Optimizations: Implemented faster custom CUDA kernels for YOLO Pre-processing and modified YOLO CUDA kernel for improved tracking performance.
+Scalability: Utilized GStreamer, DeepStream, and Triton for large-scale inference servers.
+Time Taken: January 2023 - Ongoing.
+Hands-On Experience:
 
-Developed and architected a deployable Video Analytics solution capable of serving 25-30 real-time rtsp streams with 30 fps as analytical stream-out solution.
-Reduced model deployment time by 95% and development time for adding new business rules by 85% through the implementation of custom plugins.
-Integrated ONVIF protocol support for analytical meta-data sharing, enhancing interoperability with various systems.
-Designed a multi-platform inferencing solution supporting OpenCV, OpenVino, PyTorch, and TensorRT, enabling real-time benchmarking among different frameworks.
-Successfully scaled the solution on both GPU and CPU, with support for Windows and Ubuntu environments.
-Vicon AI:
+PyTorch Modeling: Conducted research and implemented various models, including customized DataLoader for custom datasets.
+Model Deployment: Trained and deployed PyTorch classification models, experienced in using various loss functions.
+Model Optimization: Converted ONNX models to TensorRT engines and serialized PyTorch weight files to TensorRT engines.
+Custom CUDA Kernels: Developed custom CUDA kernels for YOLO Pre-processing and NMS plugin layer in TensorRT.
+API Development: Exposed API functions for Python bindings and separate bindings for CUDA kernels.
 
-Architected a Mass Video Analytic Server Solution for VMS systems, accommodating 150-300 rtsp streams with 20-30 fps on Intel Xeon with 4 Tesla T4 cards.
-Led the development of an analytical library, abstracting the complexity of analytics and enabling easy deployment of TensorRT engines for optimal resource utilization.
-Implemented a hierarchical CMake structure from scratch, facilitating seamless development and build processes.
-Followed SOLID design patterns with a pipeline paradigm to ensure a robust and maintainable architecture.
-Real-time Tracking Framework:
+DataLablePro:
 
-Designed and implemented a templated framework for real-time, light-weight multi-object tracking for mass streams, offering low latency and high accuracy.
-Developed association algorithms for both CPU and CUDA, achieving real-time latency irrespective of the number of objects in a frame.
+Role: Product Manager and Solution Architect.
+Responsibilities: Ideated new features, designed interactions, led the implementation, and maintained the backend ML library.
+Key Contributions: Structured the solution as a multi-faceted architecture to accommodate independent implementation of loose scripts, leading to a versatile product.
+ML Operations: Involved in data set labeling to model benchmarking and contributed to the ecosystem's architecture.
+Key Features: Developed queue-based annotation task assignment, image and video annotation review and feedback, annotation format converter, model accuracy validation, version association for AI models and datasets, project progress tracking, and contribution insights.
+Platform: GitHub, DVC, Python bindings, PostgresSQL, Micro-Services, ReactJS, Node, MOT benchmarking, COCO, plugins.
+Time Taken: January 2021 - Ongoing.
 Education:
+[Bachelor's/Master's Degree in Computer Science or related field]
+[University Name], [Year of Graduation]
 
-[Degree Title], [University Name], [Year of Graduation]
-[Any relevant certifications or online courses]
-Technical Skills:
+Skills:
 
-Programming Languages: Python, C++, CUDA
-Deep Learning Frameworks: PyTorch, TensorRT, OpenVINO
-Version Control: Git, GitHub
-CI/CD Tools: GitHub Actions, DVC
-Tools & Libraries: RabbitMQ, OpenCV, Shapely, pytest
-Operating Systems: Windows, Ubuntu
-Project Management: GitHub Project boards, Scrum
-Key Attributes:
+Deep Learning: PyTorch, TensorRT, OpenVINO
+Programming Languages: C++, Python
+Libraries & Frameworks: OpenCV, GStreamer, CUDA
+Version Control: Git
+Web Technologies: ReactJS, Node.js
+Database: PostgresSQL
+Design Patterns: SOLID, Facade, Bridge, Adapter, Proxy, Singleton, Observer, Visitor
+Platforms: Windows, Ubuntu, Triton, DeepStream
+Certifications:
+[Optional: List any relevant certifications]
 
-Strong analytical and problem-solving skills with a deep understanding of AI algorithms and methodologies.
-Proven ability to lead and collaborate effectively in a team environment.
-Excellent communication and presentation skills, capable of conveying technical concepts to non-technical stakeholders.
-Adaptable and eager to stay updated with the latest trends and technologies in the AI domain.
-References:
-Available upon request.
+Languages:
 
-Note: The information provided above is based on the details you shared. Please review and make any necessary adjustments to match your actual experience and achievements.
-   
+English: Fluent (Native/Bilingual)
+[Other Languages]: [Level of Proficiency]   
   
       
     
